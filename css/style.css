@@ -1,0 +1,178 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Lato";
+  line-height: 1.3;
+  font-weight: 400;
+  font-size: 16px;
+  color: #555;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato";
+  font-weight: 300;
+  color: #3b3b3b;
+}
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+.header {
+  padding: 0 40px;
+  background-color: #074b7a;
+}
+.header.header-scrolled {
+  /*border-bottom: 1px solid @headerMenuDark; */
+  background-color: #074b7a;
+}
+.header.header-scrolled .header-container {
+  border-bottom: 0;
+}
+.header-container {
+  height: 60px;
+  /*padding-top: 8px;*/
+  /*border-bottom: 1px solid @headerMenuLight; */
+  overflow: visible !important;
+}
+.header-link {
+  background-color: transparent !important;
+  margin: 0 15px;
+  color: #ffffff;
+  /*color: @headerMenuDark;*/
+  text-align: center;
+}
+.header-link:hover {
+  color: #ffffff;
+}
+.header-link.header-link-scrolled {
+  font-weight: normal !important;
+  color: white;
+}
+.header-link.header-link-scrolled:hover {
+  color: #ffffff;
+}
+.top-nav-collapse {
+  margin: 40px 0;
+}
+.icon-menu {
+  /*font-size: 20px;
+    color: #34495e;*/
+  color: white;
+}
+.menu-label {
+  color: white;
+}
+.navbar-default {
+  background-color: #dadada;
+  border-color: transparent;
+}
+.navbar-toggle {
+  border: 0px solid transparent;
+  border-color: transparent;
+}
+.navbar-nav {
+  padding: 0 10px;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  /*color: #999;*/
+  /*color: #fff;*/
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  /*font-weight: 500;*/
+}
+.navbar-inverse .navbar-collapse {
+  border-color: #ddd;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  /*background-color: transparent;*/
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  /*background-color: #16a085;*/
+  /*color: white;*/
+}
+.navbar-inverse {
+  /*background-color: rgba(255, 255, 255, 0.9);*/
+  /*background-color: rgba(70, 30, 170, 1);*/
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+}
+.navbar-brand {
+  line-height: 19px;
+  padding: 0;
+}
+.navbar-fixed-top {
+  border-width: 0 0 0;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  /*color: #7e7e7e;*/
+  /*color: #7df;*/
+}
+/* override bootstrap.css */
+.navbar-inverse .navbar-nav > li > a {
+  /*color: #a9a9a9;*/
+  /*color: #ccc;
+    font-weight: bold;*/
+  /*color: white;*/
+}
+/*------------------------------------*\
+    $TITLE
+\*------------------------------------*/
+.center {
+  text-align: center;
+}
+.header-wrap {
+  background: #074b7a;
+  /*padding-top: 40px;*/
+  /*margin-top: -50px;*/
+  margin-top: 60px;
+  height: 700px;
+  width: 100%;
+}
+header {
+  text-align: center;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-top: 40px;
+}
+.main-title {
+  color: #ffffff;
+}
+.sub-title {
+  color: #ffffff;
+}
+.countdown-container {
+  text-align: center;
+}
+.countdown-container h2,
+.countdown-container p {
+  color: #ffffff;
+}
+.clock {
+  width: 50%;
+  margin: auto;
+}
+.clock .clock-number {
+  color: #ffffff;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 120px;
+  line-height: 120px;
+}
+.clock .clock-label {
+  color: #ffffff;
+  font-size: 26px;
+  font-style: italic;
+}

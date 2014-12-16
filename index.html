@@ -4,10 +4,11 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 	<title>Zennet Supercomputer</title>
         
-	<meta name="description" content="Zennet	 supercomputer is a public decentralized and free supercomputer that allows everyone to profit from their hardware, and access virtually unlimited computing power">
+	<meta name="description" content="Zennet supercomputer is a public decentralized and free supercomputer that allows everyone to profit from their hardware, and access virtually unlimited computing power">
 	 <meta name="keywords" content="zennet, supercomputer, decentralized, bitcoin, HPC, high performance computing, big data, bigdata, crowd computing, decentralized organization, decentralized application, cryptocurrency, blockchain">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="google-site-verification" content="ACp64RR7aIXu5-N7462f5o2Tj1epToR-1jsxCmQBgeM" />  
+	
 	<!-- FACEBOOK SHARE THUMBNAILS -->
 	<meta property="og:image" content="http://zennet.sc/images/zennet1.jpg"/>
 	<meta property="og:image:secure_url" content="https://zennet.sc/images/zennet1.jpg" />
@@ -16,15 +17,16 @@
         	<link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
         	<link href="./css/style.css" rel="stylesheet" type="text/css"> 
 
-        	<!-- Google web fonts -->
-	<link href="./css/fonts.css" rel="stylesheet" type="text/css"> <!-- Raleway -->        
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Signika:400,600,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        	<!-- FontAwesome -->
+        	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
+        	<!-- Google web fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Cabin+Condensed:400,700' rel='stylesheet' type='text/css'>
+
+	<!-- Javascript -->
         	<script type="text/javascript" src="js/jquery.min.js"></script>
+        	<script type="text/javascript" src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
         	<script type="text/javascript" src="js/main.js"></script>
 
 	<style type="text/css">
@@ -41,23 +43,24 @@
 	      ga('send', 'pageview');
 	</script>
 
+	<div class="alert alert-success" id="email-alert" role="alert">Thanks! We'll keep you in the loop regarding the presale</div>
+
 	<div id="navbar-main">
 		<div class="header navbar  navbar-inverse   navbar-fixed-top"> 
 			<div class="container header-container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					
-					<p class="menu-label">menu</p>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">					
+						<p class="menu-label">menu</p>
 					</button>
-					<a class="navbar-brand  smoothScroll" href="#home"><div class="logo"></div></a> <!-- Branding -->
-					</div>
-					<div class="navbar-collapse  collapse">
+					<a class="smoothScroll" href="#home"><img class="header-logo" src="images/logo.png"></a>
+					<a class="smoothScroll header-logotype" href="#home">zennet</a>
+				</div>
+				<div class="navbar-collapse  collapse">
 					<p class="nav  navbar-nav  navbar-right">                        
 					</p>
 
 					<ul class="nav  navbar-nav  navbar-right">
 						<li class="active"><a href="#home" class="header-link smoothScroll">Home</a></li>
-
 						<li><a href="#bullet-target" class="header-link smoothScroll">Features</a></li>
 						<li><a href="#works-target" class="header-link smoothScroll">How It Works</a></li>                        
 						<li><a href="#team" class="header-link smoothScroll">Team</a></li>
@@ -71,38 +74,285 @@
 		</div>
 	</div>
 
-	<!-- Header starts here -->
+	<!--*******************-->
+	<!--***** HOME*******-->
+	<!-- *******************-->
 	<div class="header-wrap" id="home" name="home">
-		<header class="clearfix">
-			<img class="logo" src="images/logo.png">
-			<h1 class="main-title">zennet</h1>
-			<p class="sub-title">the public supercomputer</p>
+		<div class="section title-section">
+			<header class="clearfix">
+				<img class="logo" src="images/logo.png">
+				<h1 class="main-title">zennet public supercomputer</h1>
+				<p class="sub-title">with zennet supercomputer you can profit from your hardware,<br>and access virtually unlimited computing power</p>
 
-		</header>	
-		<div class="countdown-container container countdown">
-			<h2 class="countdown-title animated fadeInUp">zencoin presale is coming soon</h2>
-			<div class="clock row">
-				<div class="col-md-3">
-					<div class="clock-number" id="clock-days">00</div>
-					<div class="clock-label">days</div>
+			</header>	
+			<div class="countdown-container container countdown">	
+				<!-- <div class="top clock-stroke "></div>			 -->
+				<div class="clock row">
+					<div class="col-md-3 clock-section">
+						<div class="clock-number" id="clock-days">00</div>
+						<div class="clock-label">days</div>
+					</div>
+					<div class="col-md-3 clock-section">
+						<div class="clock-number" id="clock-hours">34</div>
+						<div class="clock-label">hours</div>
+					</div>
+					<div class="col-md-3 clock-section">
+						<div class="clock-number" id="clock-minutes">45</div>
+						<div class="clock-label">minutes</div>
+					</div>
+					<div class="col-md-3 clock-section">
+						<div class="clock-number" id="clock-seconds">56</div>
+						<div class="clock-label">seconds</div>
+					</div>
 				</div>
-				<div class="col-md-3">
-					<div class="clock-number" id="clock-hours">34</div>
-					<div class="clock-label">hours</div>
-				</div>
-				<div class="col-md-3">
-					<div class="clock-number" id="clock-minutes">45</div>
-					<div class="clock-label">minutes</div>
-				</div>
-				<div class="col-md-3">
-					<div class="clock-number" id="clock-seconds">56</div>
-					<div class="clock-label">seconds</div>
-				</div>
-
-			</div>
-		</div>    
+				<div class="clock-title animated fadeInUp">zencoin presale is coming soon</div>
+			</div> 
+			<div class="email-wrapper">				       
+			        <form data-toggle="validator" role="form">
+			            <div class="email-container email-controls form-group">
+			                <input class="email-input form-control" id="email-input" type="email" placeholder="enter your email here" data-error="Darn, that email address is invalid!">
+			                <span type="submit" class="btn email-btn">stay informed! <span class="arrow"> >> </span></span>
+			                <div class="help-block with-errors" id="email-help-block"></div>
+			            </div>
+			        </form>
+			        <div class="email-container email-info">
+			            <div class="email-notice">we won't send you spam, and won't share your email with anyone</div>
+			        </div>				        
+			</div> 
+			<!-- <div class="bottom clock-stroke "></div> -->
+		</div>  
 	</div><!-- header ends -->
 
-	
+	<div class="triangle-buffers buffer-left"></div>
+	<div class="triangle-buffers buffer-right"></div>
+
+	<!--*******************-->
+	<!--***** VIDEO *******-->
+	<!-- *******************-->
+	<div class="section video-section container" id="video">
+		<div class="row video-container">        
+			<div class="section-title video-title">introduction</div>  	
+			<iframe width="600" height="450" src="//www.youtube.com/embed/_6ugwS6_DDU" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<!--**************************-->
+	<!--***** FEATURES *******-->
+	<!-- *************************-->
+	<div class="section features-section container" id="features">
+		<div class="section-title">features</div>  	
+		 <div class="row bullet-container">            
+		    	<div class="col-lg-6   bullet clear">
+		                        <div class="bullet-content">
+		                                <div class="bullet-icon-container" style="font-size: 40px">                                        
+		                                        <i class=" fa fa-desktop"></i>
+		                                        <!-- <i class=" fa fa-cubes"></i> -->
+		                                </div>		                                
+		                               <div class="bullet-title-container">
+		                                        <h2 class="bullet-title">supercomputer access </h2> 
+		                                </div>
+		                                <div class="bullet-stroke"></div>
+		                                <div class="bullet-title-container">
+		                                        <p class="bullet-text">without the super costs</p> 
+		                                </div>
+		                        </div>
+		                        
+
+		                       <div class="bullet-overlay">
+		                           <span class="bullet-overlay-text">
+		                                    <!-- A simple solution for the rapidly growing $B600 data industry. <br> -->
+		                                    Access the biggest supercomputer in the world for a fraction of the cost of solutions such as AWS.
+		                            </span>
+		                       </div>                    
+		            </div>
+
+		    	<div class="col-lg-6  bullet center">           
+		                    <div class="bullet-content">
+		                                <div class="bullet-icon-container">
+		                                        <i class=" fa fa-dollar"></i>
+		                                </div>
+		                               <div class="bullet-title-container">
+		                                        <h2 class="bullet-title">everybody can profit </h2> 
+		                                </div>
+		                                <div class="bullet-stroke"></div>
+		                                <div class="bullet-title-container">
+		                                         <p class="bullet-text">get value from your computing resources even when you don’t use them</p>
+		                                </div>
+		                        </div>
+		                        
+		                       <div class="bullet-overlay">
+		                           <span class="bullet-overlay-text">
+		                                    Your PC can make you a profit 24/7. <br>Payments are totally frictionless.
+		                            </span>
+		                       </div>                            	       
+		    	</div>
+
+		            <div class="col-lg-6  bullet center">
+		               <div class="bullet-content">
+		                                <div class="bullet-icon-container">
+		                                        <i class=" fa fa-lock"></i>
+		                                </div>
+		                               <div class="bullet-title-container">
+		                                        <h2 class="bullet-title">safe & secure</h2>
+		                                </div>
+		                                <div class="bullet-stroke"></div>
+		                                <div class="bullet-title-container">
+		                                         <p class="bullet-text">using cutting edge virtualization technology</p>
+		                                </div>
+		                        </div>
+		                        
+		                       <div class="bullet-overlay">
+		                           <span class="bullet-overlay-text">
+		                                    Cutting-edge virtualization technology ensures the safety of your data.
+		                            </span>
+		                       </div>              
+		            </div>
+
+		            <div class="col-lg-6  bullet center">
+		                   <div class="bullet-content">
+		                                <div class="bullet-icon-container">
+		                                     <i class=" fa fa-sitemap"></i>
+		                                     <!-- <i class=" fa fa-asterisk"></i> -->
+		                                </div>
+		                               <div class="bullet-title-container">
+		                                        <h2 class="bullet-title">distributed</h2>
+		                                </div>
+		                                <div class="bullet-stroke"></div>
+		                                <div class="bullet-title-container">
+		                                         <p class="bullet-text">decentralized peer-to-peer network</p>
+		                                </div>
+		                        </div>
+		                        
+		                       <div class="bullet-overlay">
+		                           <span class="bullet-overlay-text">
+		                                   Just like Bitcoin, the network is completely decentralized. <br>Users will never be taken down by a central point of failure.
+		                            </span>
+		                       </div>          
+		            </div>
+
+		</div> 
+	</div>
+
+	<!--*******************************-->
+	<!--***** HOW IT WORKS *******-->
+	<!-- ******************************-->
+	<div class="section works-section container" id="works">
+		<div class="section-title works-title">how it works</div>  	
+	</div>
+
+	<!--**************************-->
+	<!--********* PRESS *******-->
+	<!-- *************************-->
+	<div class="section press-section container" id="press">
+		<div class="section-title">from the press</div>  
+		<div class="press-stroke"></div>
+		<div class="row press-item">
+			<div class="col-md-9">
+				<div class="press-title">"New Zennet HPC cloud to be free-market alternative to AWS"</div>
+				<div class="press-date">2014 January 28</div>
+			</div>
+			<div class="col-md-3">
+				<img class="press-logo" src="images/register.jpg">
+			</div>
+		</div>
+		<div class="press-stroke"></div>
+
+		<div class="row press-item">
+			<div class="col-md-9">
+				<div class="press-title">"Cloud network releases details of Zencoin presale"</div>
+				<div class="press-date">2014 January 15</div>
+			</div>
+			<div class="col-md-3">
+				<img class="press-logo" id="hpcwire-logo" src="images/hpcwire.png">
+			</div>
+		</div>
+		<div class="press-stroke"></div>
+
+		<div class="row press-item">
+			<div class="col-md-9">
+				<div class="press-title">"The world's largest decentralized computer is coming soon"</div>
+				<div class="press-date">2014 January 12</div>
+			</div>
+			<div class="col-md-3">
+				<img class="press-logo" src="images/thecoinfront.png">
+			</div>
+		</div>
+		<div class="press-stroke"></div>
+
+		<div class="row press-item">
+			<div class="col-md-9">
+				<div class="press-title">"Users that want to buy computational power will use Zencoins"</div>
+				<div class="press-date">2014 January 2</div>
+			</div>
+			<div class="col-md-3">
+				<img class="press-logo" id="cryptobiz-logo" src="images/cryptobiz.png">
+			</div>
+		</div>
+		<div class="press-stroke"></div>
+
+		<div class="press-btn-container">
+			<div class="button press-btn">see more >
+			</div>
+		</div>
+	</div>	
+
+	<!--*******************************-->
+	<!--********** THE TEAM *******-->
+	<!-- ******************************-->
+	<div class="section team-section container" id="team">
+		<div class="section-title">the team</div>  
+
+		
+
+		<div class="row team-container">
+			<div class="col-md-4 team-item">
+				<img class="team-img" src="images/han.jpg"/>
+				<div class="team-title">Daniel Peled</div>
+				<div class="team-stroke"></div>
+				<div class="team-position">Legal</div>
+				<div class="team-text">λορεμ ίπσομ θλίψη κάθονται Αμέτ, δεν eiusmod tempor τόσο χαμηλά όσο εργασίας</div>
+			</div>
+			<div class="col-md-4 team-item">
+				<img class="team-img" src="images/lando1.jpg"/>
+				<div class="team-title">Ohad Asor</div>
+				<div class="team-stroke"></div>
+				<div class="team-position">R&D</div>
+				<div class="team-text">λορεμ ίπσομ θλίψη κάθονται Αμέτ, δεν eiusmod tempor τόσο χαμηλά όσο εργασίας</div>
+			</div>
+			<div class="col-md-4 team-item">
+				<img class="team-img" src="images/luke.jpg"/>
+				<div class="team-title">Amnon Dafni</div>
+				<div class="team-stroke"></div>
+				<div class="team-position">Marketing</div>
+				<div class="team-text">λορεμ ίπσομ θλίψη κάθονται Αμέτ, δεν eiusmod tempor τόσο χαμηλά όσο εργασίας</div>
+			</div>
+		</div>
+	</div>
+
+	<!--*******************************-->
+	<!--******* THE CONTACT ******-->
+	<!-- ******************************-->
+	<div class="section contact-section container" id="contact">
+		<div class="row contact-container">
+			<div class="col-md-4" id="contact-social">
+				<div class="contact-title">Subscribe & Follow</div>
+				<div class="contact-icon-container"><i class=" fa fa-facebook"></i><span class="contact-icon-text">Follow us on Facebook</span></div>
+				<div class="contact-icon-container"><i class=" fa fa-comment"></i><span class="contact-icon-text">Visit BitcoinTalk forum</span></div>
+				<div class="contact-icon-container"><i class=" fa fa-rss"></i><span class="contact-icon-text">Subscribe RSS</span></div>
+				<div class="contact-icon-container"><i class=" fa fa-twitter"></i><span class="contact-icon-text">Follow us on Twitter</span></div>
+				<div class="contact-icon-container"><i class=" fa fa-google-plus"></i><span class="contact-icon-text">Follow us on Google+</span></div>
+				<div class="contact-icon-container"><i class=" fa fa-linkedin"></i><span class="contact-icon-text">Connect on Linkedin</span></div>
+				<div class="contact-icon-container"><i class=" fa fa-youtube"></i><span class="contact-icon-text">Follow us on Youtube</span></div>
+				<div class="contact-icon-container"><i class=" fa fa-github"></i><span class="contact-icon-text">Check us out on Github</span></div>
+			</div>
+			<div class="col-md-8" id="contact-email"></div>
+		</div>
+	</div>
+
+	<!--*******************************-->
+	<!--********** FOOTER **********-->
+	<!-- ******************************-->
+	<div class="section footer-section container" id="footer">
+	</div>
 </body>
 </html>

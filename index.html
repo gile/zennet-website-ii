@@ -26,13 +26,16 @@
 
 	<!-- Javascript -->
         	<script type="text/javascript" src="js/jquery.min.js"></script>
+        	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        	<script type="text/javascript" src="./js/bootstrap.js"></script> <!-- Bootstrap core js -->
+        	<script type="text/javascript" src="js/smoothscroll.js"></script> <!-- For smooth scrolling -->
         	<script type="text/javascript" src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
         	<script type="text/javascript" src="js/main.js"></script>
 
 	<style type="text/css">
 	</style>
 </head>
-<body class="animated fadeIn background-color" data-spy="scroll" data-offset="0" data-target="#navbar-main">
+<body class="animated fadeIn background-color" data-spy="scroll" data-offset="60" data-target="#navbar-main">
 	<script>
 	      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -43,29 +46,26 @@
 	      ga('send', 'pageview');
 	</script>
 
-	<div class="alert alert-success" id="email-alert" role="alert">Thanks! We'll keep you in the loop regarding the presale</div>
+	<div class="alert alert-success" id="email-alert" role="alert">Thanks! We'll keep you updated</div>
 
 	<div id="navbar-main">
-		<div class="header navbar  navbar-inverse   navbar-fixed-top"> 
+		<div class="header navbar navbar-inverse navbar-fixed-top"  role="navigation"> 
 			<div class="container header-container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">					
 						<p class="menu-label">menu</p>
 					</button>
 					<a class="smoothScroll" href="#home"><img class="header-logo" src="images/logo.png"></a>
-					<a class="smoothScroll header-logotype" href="#home">zennet</a>
+					<a class="smoothScroll header-logotype">zennet</a>
 				</div>
-				<div class="navbar-collapse  collapse">
-					<p class="nav  navbar-nav  navbar-right">                        
-					</p>
-
+				<div class="navbar-collapse  collapse">		
 					<ul class="nav  navbar-nav  navbar-right">
 						<li class="active"><a href="#home" class="header-link smoothScroll">Home</a></li>
-						<li><a href="#bullet-target" class="header-link smoothScroll">Features</a></li>
-						<li><a href="#works-target" class="header-link smoothScroll">How It Works</a></li>                        
+						<li><a href="#intro" class="header-link smoothScroll">Info</a></li>
+						<li><a href="#features" class="header-link smoothScroll">Features</a></li>
+						<li><a href="#works" class="header-link smoothScroll">How It Works</a></li>                        						
+						<li><a href="#press" class="header-link smoothScroll">Press</a></li>
 						<li><a href="#team" class="header-link smoothScroll">Team</a></li>
-						<li><a href="#press-target" class="header-link smoothScroll">Press</a></li>
-						<li><a href="#links" class="header-link smoothScroll">Info</a></li>
 						<li><a href="#contact"  target="_blank" class="header-link smoothScroll">Contact</a></li>
 					</ul>
 
@@ -88,19 +88,19 @@
 			<div class="countdown-container container countdown">	
 				<!-- <div class="top clock-stroke "></div>			 -->
 				<div class="clock row">
-					<div class="col-md-3 clock-section">
+					<div class="col-xs-3 clock-section">
 						<div class="clock-number" id="clock-days">00</div>
 						<div class="clock-label">days</div>
 					</div>
-					<div class="col-md-3 clock-section">
+					<div class="col-xs-3 clock-section">
 						<div class="clock-number" id="clock-hours">34</div>
 						<div class="clock-label">hours</div>
 					</div>
-					<div class="col-md-3 clock-section">
+					<div class="col-xs-3 clock-section">
 						<div class="clock-number" id="clock-minutes">45</div>
 						<div class="clock-label">minutes</div>
 					</div>
-					<div class="col-md-3 clock-section">
+					<div class="col-xs-3 clock-section">
 						<div class="clock-number" id="clock-seconds">56</div>
 						<div class="clock-label">seconds</div>
 					</div>
@@ -109,13 +109,17 @@
 			</div> 
 			<div class="email-wrapper">				       
 			        <form data-toggle="validator" role="form">
-			            <div class="email-container email-controls form-group">
-			                <input class="email-input form-control" id="email-input" type="email" placeholder="enter your email here" data-error="Darn, that email address is invalid!">
-			                <span type="submit" class="btn email-btn">stay informed! <span class="arrow"> >> </span></span>
-			                <div class="help-block with-errors" id="email-help-block"></div>
+			            <div class="email-container email-controls form-group align-center">
+			                <input class="email-input form-control" id="presale-email-input" type="email" placeholder="enter your email here" data-error="Darn, that email address is invalid!">
+			                <span type="submit" class="btn email-btn" name="presale-btn">
+			                	<span class="email-btn-text">stay informed! </span>
+			                	<span class="arrow"> >> </span>
+			                	<i class=" fa fa-envelope-o"></i>
+			                </span>
+			                <div class="help-block with-errors email-help-block" id="presale-help-block"></div>
 			            </div>
 			        </form>
-			        <div class="email-container email-info">
+			        <div class="email-container email-info align-center">
 			            <div class="email-notice">we won't send you spam, and won't share your email with anyone</div>
 			        </div>				        
 			</div> 
@@ -129,7 +133,7 @@
 	<!--*******************-->
 	<!--***** VIDEO *******-->
 	<!-- *******************-->
-	<div class="section video-section container" id="video">
+	<div class="section video-section container" id="intro">
 		<div class="row video-container">        
 			<div class="section-title video-title">introduction</div>  	
 			<iframe width="600" height="450" src="//www.youtube.com/embed/_6ugwS6_DDU" frameborder="0" allowfullscreen></iframe>
@@ -244,47 +248,47 @@
 	<!--********* PRESS *******-->
 	<!-- *************************-->
 	<div class="section press-section container" id="press">
-		<div class="section-title">from the press</div>  
+		<div class="section-title">in the press</div>  
 		<div class="press-stroke"></div>
 		<div class="row press-item">
-			<div class="col-md-9">
+			<div class="col-sm-9">
 				<div class="press-title">"New Zennet HPC cloud to be free-market alternative to AWS"</div>
 				<div class="press-date">2014 January 28</div>
 			</div>
-			<div class="col-md-3">
-				<img class="press-logo" src="images/register.jpg">
+			<div class="col-sm-3">
+				<img class="press-logo" id="register-logo" src="images/register.jpg">
 			</div>
 		</div>
 		<div class="press-stroke"></div>
 
 		<div class="row press-item">
-			<div class="col-md-9">
+			<div class="col-sm-9 press-item-left">
 				<div class="press-title">"Cloud network releases details of Zencoin presale"</div>
 				<div class="press-date">2014 January 15</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-sm-3">
 				<img class="press-logo" id="hpcwire-logo" src="images/hpcwire.png">
 			</div>
 		</div>
 		<div class="press-stroke"></div>
 
 		<div class="row press-item">
-			<div class="col-md-9">
+			<div class="col-sm-9 press-item-left">
 				<div class="press-title">"The world's largest decentralized computer is coming soon"</div>
 				<div class="press-date">2014 January 12</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-sm-3">
 				<img class="press-logo" src="images/thecoinfront.png">
 			</div>
 		</div>
 		<div class="press-stroke"></div>
 
 		<div class="row press-item">
-			<div class="col-md-9">
+			<div class="col-sm-9 press-item-left">
 				<div class="press-title">"Users that want to buy computational power will use Zencoins"</div>
 				<div class="press-date">2014 January 2</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-sm-3">
 				<img class="press-logo" id="cryptobiz-logo" src="images/cryptobiz.png">
 			</div>
 		</div>
@@ -334,18 +338,69 @@
 	<!-- ******************************-->
 	<div class="section contact-section container" id="contact">
 		<div class="row contact-container">
-			<div class="col-md-4" id="contact-social">
+			<div class="col-md-4" id="contact-social">				
 				<div class="contact-title">Subscribe & Follow</div>
-				<div class="contact-icon-container"><i class=" fa fa-facebook"></i><span class="contact-icon-text">Follow us on Facebook</span></div>
-				<div class="contact-icon-container"><i class=" fa fa-comment"></i><span class="contact-icon-text">Visit BitcoinTalk forum</span></div>
-				<div class="contact-icon-container"><i class=" fa fa-rss"></i><span class="contact-icon-text">Subscribe RSS</span></div>
-				<div class="contact-icon-container"><i class=" fa fa-twitter"></i><span class="contact-icon-text">Follow us on Twitter</span></div>
-				<div class="contact-icon-container"><i class=" fa fa-google-plus"></i><span class="contact-icon-text">Follow us on Google+</span></div>
-				<div class="contact-icon-container"><i class=" fa fa-linkedin"></i><span class="contact-icon-text">Connect on Linkedin</span></div>
-				<div class="contact-icon-container"><i class=" fa fa-youtube"></i><span class="contact-icon-text">Follow us on Youtube</span></div>
-				<div class="contact-icon-container"><i class=" fa fa-github"></i><span class="contact-icon-text">Check us out on Github</span></div>
+
+				<div class="contact-icon-container">
+					<a   id="zennet-forum-img" target="_blank"></a>
+					<div class="contact-icon-text">Visit Zennet Forum</div>
+				</div>
+				<div class="contact-icon-container">
+					<a href="https://www.facebook.com/zennet.sc" target="_blank"><i class=" fa fa-facebook"></i></a>
+					<span class="contact-icon-text">Follow us on Facebook</span>
+				</div>
+				<div class="contact-icon-container">
+					<a href="https://bitcointalk.org/index.php?topic=736447.msg8321043#msg8321043" target="_blank"><i class=" fa fa-comment"></i></a>
+					<span class="contact-icon-text">Visit BitcoinTalk forum</span>
+				</div>
+				<div class="contact-icon-container">
+					<i class=" fa fa-rss"></i>
+					<span class="contact-icon-text">Subscribe RSS</span>
+				</div>
+				<div class="contact-icon-container">
+					<a href="https://twitter.com/zennet_sc?lang=en" target="_blank"><i class=" fa fa-twitter"></i></a>
+					<span class="contact-icon-text">Follow us on Twitter</span>
+				</div>
+				<div class="contact-icon-container">
+					<a href="https://plus.google.com/107054006637332887499/posts" target="_blank"><i class=" fa fa-google-plus"></i></a>
+					<span class="contact-icon-text">Follow us on Google+</span>
+				</div>
+				<div class="contact-icon-container">
+					<a href="https://www.linkedin.com/company/xennet-supercomputer?trk=top_nav_home" target="_blank"><i class=" fa fa-linkedin"></i></a>
+					<span class="contact-icon-text">Connect on Linkedin</span>
+				</div>
+				<div class="contact-icon-container">
+					<a href="https://www.youtube.com/channel/UC7YGy1RostIKMEvKysKoz_g" target="_blank"><i class=" fa fa-youtube"></i></a>
+					<span class="contact-icon-text">Follow us on Youtube</span>
+				</div>
+				<div class="contact-icon-container">
+					<a href="https://github.com/Xennet" target="_blank"><i class=" fa fa-github"></i></a>
+					<span class="contact-icon-text">Check us out on Github</span>
+				</div>
 			</div>
-			<div class="col-md-8" id="contact-email"></div>
+			<div class="col-md-8" id="connect-email">
+				<div class="contact-title" id="connect-title">Connect</div>
+				<div class="contact-label">be the first to know!</div>
+				
+				<div class="email-wrapper" id="connect-email-wrapper">									       
+					<form data-toggle="validator" role="form">
+						<div class="email-container email-controls form-group">
+						    <input class="email-input form-control" id="connect-email-input" type="email" placeholder="enter your email" data-error="Darn, that email address is invalid!">
+						    <span type="submit" class="btn email-btn" name="connect-btn">
+						    	<span class="email-btn-text">subscribe</span> 
+						    	<span class="arrow"> > </span>
+						    	<i class=" fa fa-envelope-o"></i>
+						    </span>
+						    <div class="help-block with-errors email-help-block" id="connect-help-block"></div>
+						</div>
+					</form>				        			       
+				</div> 
+
+				<div class="contact-icon-container" id="contact-icon-container-email">
+					<a href="mailto:zennet.sc@gmail.com"><i class=" fa fa-envelope"></i></a>
+					<span class="contact-icon-text">send us an email</span>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -353,6 +408,10 @@
 	<!--********** FOOTER **********-->
 	<!-- ******************************-->
 	<div class="section footer-section container" id="footer">
+		<div class="footer-container row">
+			<div class="col-sm-2"><img src="images/logotype.png" class="logotype"/></div>
+			<div class="footer-text col-sm-9">© 2014 zennet decentralized applications | all rights reserved</div>
+		</div>
 	</div>
 </body>
 </html>

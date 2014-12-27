@@ -52,7 +52,7 @@
 @highlightColorHover: @medOrange;
 @highlightColorDark: @darkOrange;
 @headerMenuLight: @white;
-@headerMenuLightHover: @white;
+@headerMenuLightHover: @lightOrange;
 @bulletTitleColor: @dirtyOrange;
 @bulletStrokeColor: @medGrey;
 @bulletTextColor: @darkGrey;
@@ -81,6 +81,9 @@ h1, h2, h3, h4, h5, h6 {
 	color: #3b3b3b;
 }
 
+.align-center {
+	text-align: center;
+}
 
 /*------------------------------------*\
     $NAVIGATION
@@ -136,21 +139,19 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: transparent !important;
 	margin: 0 15px;
 	color: @headerMenuLight;
-	/*color: @headerMenuDark;*/
 	text-align: center;
 
+	&:focus {
+		color: @headerMenuLight;
+	}
+
 	&:hover {
-	    color: @headerMenuLightHover;
-	}
+	    	color: @headerMenuLightHover;
 
-	&.header-link-scrolled {    
-		font-weight: normal !important;
-		color: white;
-
-		&:hover {
-		    color: @headerMenuLightHover;
-		}
-	}
+	    	&:focus {
+	    		color: @headerMenuLightHover;
+	    	}
+	}	
 }
 
 .top-nav-collapse {
@@ -158,8 +159,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .icon-menu {
-	/*font-size: 20px;
-	color: #34495e;*/
 	color: white;
 }
 
@@ -184,11 +183,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-	/*color: #999;*/
-	/*color: #fff;*/
 	background-color: transparent;
 	border-bottom: 2px solid @highlightColorLight;
-	/*font-weight: 500;*/
 }
 
 .navbar-inverse .navbar-collapse {
@@ -197,13 +193,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-    /*background-color: transparent;*/
+
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    /*background-color: #16a085;*/
-	/*color: white;*/
+  
 }
 
 .navbar-inverse {
@@ -225,16 +220,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-    /*color: #7e7e7e;*/
-    /*color: #7df;*/
+ 
 }
 
 /* override bootstrap.css */
 .navbar-inverse .navbar-nav > li > a {
-    /*color: #a9a9a9;*/
-    /*color: #ccc;
-    font-weight: bold;*/
-    /*color: white;*/
+
 }
 
 /*------------------------------------*\
@@ -271,7 +262,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-wrap {
-	background: @backgroundBlue;
+	/*background: @backgroundBlue;*/
+	background-image: url("../images/svg/svg-1.svg");
 	padding-top: 130px;
 	height: 800px;
 	width: 100%;	
@@ -361,7 +353,7 @@ header {
 	font-size: 42px;
 	font-style: italic;
 	color: @highlightColorLight;
-	margin: 0;
+	margin: 20px 0 0;
 	font-variant: small-caps;
 	text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
@@ -376,7 +368,6 @@ header {
 }
 
 .email-container {
-	text-align: center;
 	margin: 0;
 }
 
@@ -415,6 +406,10 @@ header {
 		font-family: @cabinCondensed;
 		font-size: 16px;
 	}
+
+	.fa-envelope-o {
+		display: none;
+	}
 }
 
 .email-btn:hover {
@@ -440,7 +435,7 @@ header {
 	opacity: 0;
 }
 
-#email-help-block {
+.email-help-block {
 	text-align: right;
 	width: 25%;
 	margin: auto;
@@ -494,7 +489,7 @@ header {
     $FEATURES (BULLETS)
 \*------------------------------------*/
 .features-section {
-	background-color: @backgroundVeryLightBlue;
+	background-image: url("../images/svg/svg-2.svg");
 	padding-bottom: 40px;
 }
 
@@ -549,7 +544,7 @@ i {
 }
 
 i:hover {
-	opacity: 0.5;
+	color: @medOrange;
 }
 
 .bullet-title {
@@ -688,8 +683,8 @@ i:hover {
     $TEAM
 \*------------------------------------*/
 .team-section {
-	background-color:@backgroundWhite;
-	margin-bottom: 60px;
+	background-image: url("../images/svg/svg-3.svg");
+	padding-bottom: 60px;
 }
 
 .team-container {
@@ -745,7 +740,7 @@ i:hover {
 \*------------------------------------*/
 .contact-section {
 	background-color:@backgroundLightBlue;
-	height: 400px;
+	height: 440px;
 }
 
 .contact-container {
@@ -756,29 +751,380 @@ i:hover {
 }
 
 .contact-title {
-	margin-bottom: 15px;
+	margin-bottom: 32px;
 	font-size: 18px;
 	font-weight: bold;
 	font-style: italic;
 }
 
+.contact-label {
+	font-size: 16px;
+}
+
+#connect-email {
+	padding-left: 25px;
+}
+
+#connect-email-wrapper {
+	margin-bottom:  20px;
+}
+
+#connect-email-input {
+	border: 1px solid #aaa;
+}
+
 .contact-icon-container {
-	margin-bottom: 10px;
+	margin-bottom: 14px;
 
 	.fa {
-		width: 25px;
+		width: 42px;
+		font-size: 24px;
+
+		&:hover {
+			color: @lightOrange;			
+			/*text-shadow: -1px 1px 8px #ffc, 1px -1px 8px @medOrange;*/
+		}
+	}
+
+	.fa-facebook {
+		color: @darkBlue;
+	}
+
+	.fa-comment {
+		color: @medBlue;
+	}
+
+	.fa-rss {
+		color: @medOrange;
+	}
+
+	.fa-twitter {
+		color: steelblue;
+	}
+
+	.fa-google-plus {
+		color: @darkOrange;
+	}
+
+	.fa-linkedin {
+		color: @darkBlue;
+	}
+
+	.fa-youtube {
+		color: red;
+	}
+
+	.fa-envelope {
+		width: 24px;
+	}
+}
+
+#zennet-forum-img {
+	width: 28px;
+	height: 28px;
+	background-repeat: no-repeat;
+	margin-right: 17px;
+	background-image:url("../images/logo-sprite.png");
+	background-position:0px 0px;
+	display: inline-block;
+
+	&:hover {
+		background-position:0px -28px;
 	}
 }
 
 .contact-icon-text {
-	font-size: 14px;
+	font-size: 16px;
+	display: inline-block;
+}
+
+#connect-email-wrapper {
+	.fa-envelope-o {
+		display: none;
+	}
 }
 
 /*------------------------------------*\
     $FOOTER
 \*------------------------------------*/
 .footer-section {
-	background-color:@backgroundGrey;
-	height: 40px;
+	background-color:@backgroundLightGrey;
 }
 
+.footer-container {
+	height: 60px;
+	width: 60%;
+	margin: auto;
+}
+
+.logotype {
+	height: 30px;
+	margin-top: 15px;
+}
+
+.footer-text {
+	font-size: 14px;
+	color: @medGrey;
+	margin-top: 21px;
+	margin-left: 30px;
+}
+
+/*------------------------------------*\
+    $MEDIA-QUERIES
+\*------------------------------------*/
+
+@media screen and (max-width:1050px), screen and (max-device-width:1050px){
+        body .header{ 
+            background-attachment: scroll; 
+        }
+}
+
+@media screen and (max-width:1550px) {
+	.title-section {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width:1400px) {
+	.press-section {
+		.press-stroke,
+		.press-item {
+			width: 80%;
+		}
+	}
+
+	.contact-section {
+		.contact-container {
+			width: 80%;
+
+			#connect-email {
+				padding-left: 60px;
+
+				#connect-email-input {
+					width: 69%;
+				}
+			}
+		}
+	}
+
+	.footer-section {
+		.footer-container {
+			width: 80%;
+		}
+	}
+}
+
+@media screen and (max-width:1200px) {
+	.title-section {
+		width: 80%;
+	}
+	
+
+	.press-section {
+		.press-title {
+			font-size: 20px;
+		}
+	}
+}
+
+@media screen and (max-width:990px) {
+	.press-section {
+		.press-logo {
+			height: 25px;
+		}
+
+		.press-title {
+			font-size: 18px;
+		}
+	}
+
+	.contact-section {
+		height: auto;
+
+		.contact-container {
+			margin: 30px auto;
+
+			.contact-title {
+				margin: 50px 0 10px;
+			}
+
+			#connect-email {			
+				padding-left: 0;
+				
+			}
+		}
+	}
+}
+
+@media screen and (max-width:800px) {
+	.title-section  {
+		height: 900px;
+	
+		.countdown-container {
+			margin-top: 30px;
+		}
+
+		.clock {
+			.clock-number {
+				height: 96px;
+				font-size: 80px;
+			}
+
+			.clock-label {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+/** MOBILE HEADER **/
+@media screen and (max-width:769px) {
+	.title-section  {
+		.email-wrapper {
+			.email-input {
+				width: 50%;
+			}
+
+			.email-btn {
+				width: 40%;
+			}			
+		}
+	}
+
+	.press-section {
+		.press-item {
+			height: auto;
+
+			.col-sm-9 {
+				text-align: center;
+			}
+
+			.col-sm-3 {
+				height: auto;
+				text-align: center;
+
+				.press-logo {
+					float: none;
+					margin-top: 20px;
+					height: 50px;
+
+					&#register-logo {
+						height: 30px;
+					}
+				}
+			}
+		}
+	}
+
+
+	.footer-section {
+		.footer-container {
+			height: auto;
+			margin: 15px auto;
+
+			.col-sm-2,
+			.col-sm-9 {
+				text-align: center;
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:660px) {
+	.title-section  {
+		.clock-title {
+			font-size: 32px;
+		}
+	}
+
+	.video-section {
+		iframe {
+			width: 450px;
+			height: 335px;
+		}
+	}
+
+	.contact-section {
+		.email-btn {
+			font-size: 18px;
+			line-height: 29px;
+		}
+	}
+}
+
+@media screen and (max-width:570px) {
+	.title-section  {
+		.sub-title {
+			font-size: 16px;
+			width: 77%;
+			margin: auto;
+		}
+
+		.clock {
+			.clock-number {
+				font-size: 72px;
+			}
+		}
+
+		.email-wrapper {
+			.email-input {
+				width: 70%;
+			}
+
+			.email-btn-text,
+			.arrow  {
+				display: none;		
+			}
+
+			.email-btn {
+				text-align: center;
+				width: 15%;
+				margin-left: -5px;
+
+				.fa-envelope-o {
+					display: inline-block;
+					color: white;
+					font-size: 22px;
+				}
+				
+			}
+		}
+	}
+
+	.press-section {
+		.press-title {
+			font-size: 16px;
+		}
+	}
+
+	.contact-section { 
+		.email-btn-text,
+		.arrow,
+		#contact-icon-container-email  {
+			display: none;		
+		}
+
+		#connect-email-wrapper .email-btn {
+			text-align: center;
+			width: 15%;
+			margin-left: -5px;
+
+			.fa-envelope-o {
+				display: inline-block;
+				color: white;
+				font-size: 22px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:520px) {
+	.title-section {
+		.clock {
+			.clock-number {
+				font-size: 64px;
+			}
+		}
+	}
+}

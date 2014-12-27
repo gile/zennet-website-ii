@@ -6,6 +6,8 @@
 
            var   	duration = 300,
                 	hover = false;
+           
+           var id;
 
  	function dispatchTimer() {
  		var timeNow = new Date();
@@ -85,8 +87,10 @@
 	$('.bullet-content').animate({'opacity': 1}, duration);        
 
 	$('.email-btn').click(function() {
-		var    email = $('.email-input').val(),
-		        isValid = $('#email-help-block').children().length < 1;
+		var    	name = $(this).attr('name').split('-')[0],
+			$input = $('#' + name + '-email-input'),
+			email = $input.val(),
+		        	isValid = $('#' + name + '-help-block').children().length < 1;
 
 		if (email && isValid) {
 		        $.ajax( {
@@ -94,7 +98,7 @@
 		            success: function( data ) {
 		        }});
 
-		        $('.email-input').val('');
+		        $input.val('');
 
 		        $('#email-alert').css({'opacity': 1});
 		        

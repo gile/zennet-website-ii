@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Marianina";
-  src: url("MarianinaXWdFY-BoldItalic_M.eof");
+  src: url("Marianina/MarianinaXWdFY-BoldItalic_M.ttf");
 }
 /*@robotoSlab: 'Roboto Slab', serif;
 @signika: 'Signika', sans-serif;
@@ -166,9 +166,9 @@ h6 {
 }
 .header-wrap {
   /*background: @backgroundBlue;*/
-  background-image: url("../images/svg/svg-1.svg");
+  background-image: url("../images/bg1.jpg");
   padding-top: 130px;
-  height: 800px;
+  height: 850px;
   width: 100%;
 }
 header {
@@ -227,7 +227,7 @@ header {
 .clock .clock-number {
   height: 105px;
   color: #ffffff;
-  font-family: "Marianina", sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 120px;
   line-height: 120px;
 }
@@ -357,7 +357,7 @@ header {
     $FEATURES (BULLETS)
 \*------------------------------------*/
 .features-section {
-  background-image: url("../images/svg/svg-2.svg");
+  background-image: url("../images/bg2.jpg");
   padding-bottom: 40px;
 }
 .bullet-container {
@@ -517,7 +517,7 @@ i:hover {
     $TEAM
 \*------------------------------------*/
 .team-section {
-  background-image: url("../images/svg/svg-3.svg");
+  background-image: url("../images/bg3.jpg");
   padding-bottom: 60px;
 }
 .team-container {
